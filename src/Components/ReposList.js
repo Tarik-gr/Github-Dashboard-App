@@ -21,7 +21,7 @@ const ReposList = ({repos}) => {
     return (    
     <div className="repos-list" >
         {repos.map((repo, index) =>(
-        <div className="repo" key={index} onClick={()=>handleShow(index)}>
+        <div className="repo" key={index} onClick={()=>handleShow(index)} data-testid={`repo-item-${index}`}>
             <GoRepo size="1.2rem" />
             <div className="repo-name">{repo.name}</div>
             <RepoDetails repo={repo} show={show[index]} />

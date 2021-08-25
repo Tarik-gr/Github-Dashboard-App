@@ -23,8 +23,9 @@ function App() {
 
     // fetch the repositories from github and set them on repos state
     const repos_url = (request.data.items[0] !== undefined) && request.data.items[0].repos_url;
-    const getRepos = await axios.get(repos_url);
-    setRepos(getRepos.data)
+    const getRepos = await axios.get(repos_url)
+    getRepos.data && setRepos(getRepos.data)
+    
   }
 
 

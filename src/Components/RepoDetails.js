@@ -18,7 +18,7 @@ const RepoDetails = ({repo, show}) => {
         <>
         {/* IF THE DETAILS DISPLAY IS TRUE THEN DISPLAY DETAILS  */}
         { show === true ? (
-            <div className="repo-details">
+            <div className="repo-details" data-testid="repo-detail"> 
                 <h4>Description : {repo.description}</h4>
                 <div className="stars">{repo.stargazers_count}<GoStar /></div>
                 <p>Langage utilisé      : <span className="info">{repo.language}</span></p> 

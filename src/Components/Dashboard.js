@@ -20,7 +20,7 @@ const Dashboard = ({dataProfil, repos}) => {
                 { dataProfil.avatar_url && (<img src={dataProfil.avatar_url} alt="avatar" />)}
             </div>
             <div className="profil-info">
-                <h2>Profil: <span className="name-profil">{dataProfil.login}</span></h2>
+                <h2>Profil: <span className="name-profil" data-testid="profilName">{dataProfil.login}</span></h2>
                 <div className="link-profil">Lien vers le <a href={dataProfil.html_url} target="_blank" rel="noopener noreferrer">GITHUB</a></div>
             </div>
         </div>

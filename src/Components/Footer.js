@@ -5,7 +5,7 @@ const Footer = () => {
         <footer>
             <div className="footer-container">
                 <div className="footer-text">
-                    Projet réalisé par &nbsp; <a href="https://github.com/Tarik-gr" target="_blank"> Tarik@Gr</a> 
+                    Projet réalisé par &nbsp; <a href="https://github.com/Tarik-gr" target="_blank" rel="noopener noreferrer"> Tarik@Gr</a> 
                 </div>
             </div>
         </footer>
