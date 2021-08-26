@@ -7,7 +7,7 @@ const ReposList = ({repos}) => {
 
     const initialReposShow = ()=>{// INITIALIZE THE DETAILS DISPLAY TO FALSE
         let res = [];
-        for (let i=0; i<20; i++){ res.push(false) };
+        for (let i=0; i<50; i++){ res.push(false) };
         return res;
     }
     const [show, setShow] = useState(initialReposShow());// STATE OF DETAILS DISPLAY
